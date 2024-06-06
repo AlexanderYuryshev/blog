@@ -1,0 +1,32 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db": "cd src/db && npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all"
+  },
+  "dependencies": {
+    "next": "14.1.2",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "sequelize": "^6.37.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.1.2",
+    "prettier": "^3.2.5",
+    "prettier-eslint": "^16.3.0",
+    "sequelize-cli": "^6.6.2",
+    "typescript": "^5"
+  }
+}
